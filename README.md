@@ -46,3 +46,19 @@ python main_classification.py with config=CIFAR100.resnetv1.RN56_RN20.letKD-1 ev
 python main_classification.py with config=CIFAR100.resnetv1.RN56_RN20.letKD-2 evaluate=True
 # output logs are stored at ./experiments/CIFAR100/resnetv1/RN56_RN20/letKD-2
 ```
+
+**(4)** Run main_classification.py for performing KMeans with 4096 centers:
+
+#### Perform KMeans centers:
+```bash
+python main_classification.py with config=CIFAR100.resnetv1.RN56 kmeans=4096
+# output logs are stored at ./experiments/VQ/CIFAR100/resnetv1/RN56
+```
+
+**(5)** Run main_classification.py for performing LDA and generating scores (intermediate level supervision) with 8 sub-classes:
+
+#### Evaluate student network:
+```bash
+python main_classification.py with config=CIFAR100.resnetv1.RN56 LDA=5
+# LDA=5 represents the location of the intermediate layer, default is 5 for RN models
+# output logs are stored at ./experiments/LDA/CIFAR100/resnetv1/RN56
