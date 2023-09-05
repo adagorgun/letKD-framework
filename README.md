@@ -1,9 +1,11 @@
 # letKD - Framework
 Official PyTorch implementation of our BMVC 2023 paper **Knowledge Distillation Layer that Lets the Student Decide**, an approach for knowledge distillation.
 
-We adopt the framework implemented by [QuEST](https://github.com/valeoai/quest).
+## **[Supplementary Material](https://github.com/adagorgun/letKD-framework/blob/main/supplementary_material.pdf)**
 
-## **Preparation**
+## **Preparation-Code**
+
+We adopt the framework implemented by [QuEST](https://github.com/valeoai/quest).
 
 ### **Pre-requisites**
 * Python >= 3.7
