@@ -64,3 +64,15 @@ python main_classification.py with config=CIFAR100.resnetv1.RN56 kmeans=4096
 python main_classification.py with config=CIFAR100.resnetv1.RN56 LDA=5
 # LDA=5 represents the location of the intermediate layer, default is 5 for RN models
 # output logs are stored at ./experiments/LDA/CIFAR100/resnetv1/RN56
+```
+
+If you find this repository useful for your research, please consider citing the paper.
+```bash
+@article{gorgun2023knowledge,
+  title={Knowledge Distillation Layer that Lets the Student Decide},
+  author={Gorgun, Ada and Gurbuz, Yeti Z and Alatan, A Aydin},
+  journal={arXiv preprint arXiv:2309.02843},
+  year={2023}
+}
+```
+
